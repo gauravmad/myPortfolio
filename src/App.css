@@ -1,0 +1,86 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap');
+
+.canvas-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+.home {
+  width: 100vw;
+  height: 70vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.navlist:hover {
+  text-decoration-skip-ink: none;
+}
+
+.content {
+  position: relative;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  z-index: 1;
+}
+
+.profession {
+  background: linear-gradient(180deg, #FFF 0%, #00D1FF 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-family: Raleway;
+  font-size: 80px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+.profession1{
+  background: linear-gradient(180deg, #FFF 0%, #00D1FF 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-family: Raleway;
+  font-size: 80px;
+  font-style: normal;
+  font-weight: 100;
+  line-height: normal;
+}
+
+.button {
+  border: 2px solid rgb(0, 213, 255);
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(20px);
+}
+.svglb {
+  width: 500px;
+  height: 500px;
+  position: absolute;
+  justify-content: center;
+  top: 50;
+  left: 50;
+  z-index: 0;
+}
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.animate-professions {
+  animation: fade-in 1s ease-out;
+}
+
